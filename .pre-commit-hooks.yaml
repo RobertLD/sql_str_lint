@@ -1,0 +1,7 @@
+-   id: sql-str-int
+    name: Lint SQL in Python Strings
+    description: Automatically lint and fix SQL embedded in python strings using sqlfluff
+    language: python
+    entry: sql_str_lint_hook
+    always_run: true
+    types: [python]
