@@ -16,6 +16,7 @@ Add this to your ``.pre-commit-config.yaml`` file
 Available flags:
 
 * ``--config``: File path for SQLfluff config file
+* ``--name-filter`` Only lint str variables containing this sub-string
 
 The hook supports [sqlfluff's configuration files](https://docs.sqlfluff.com/en/stable/configuration.html) - Please refer to the sqlfluff documentation for reference
 
