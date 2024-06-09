@@ -1,0 +1,53 @@
+[sqlfluff]
+
+dialect = ansi
+templater = raw
+rules = CP01,CP03,CP04,CP05,CV01,CV01,CV03,CV05,CV07,CV10,CV11,LT01,LT02,LT03,LT04,LT05,LT06,LT07,LT08,LT10,LT11,LT13,RF03,RF06,ST01,ST02
+max_line_length = 120
+processes = -1
+large_file_skip_byte_limit=25000
+
+
+
+[sqlfluff:indentation]
+allow_implicit_indents = True
+indented_using_on = False
+indented_joins = false
+
+
+
+; Caps rules
+[sqlfluff:rules:capitalisation.keywords]
+capitalisation_policy = lower
+
+
+[sqlfluff:rules:capitalisation.literals]
+capitalisation_policy = lower
+
+
+[sqlfluff:rules:capitalisation.types]
+extended_capitalisation_policy = lower
+
+
+
+; SQL Style Conventions
+
+[sqlfluff:rules:convention.select_trailing_comma]
+select_clause_trailing_comma = forbid
+
+[sqlfluff:rules:convention.terminator]
+multiline_newline = False
+require_final_semicolon = False
+
+[sqlfluff:rules:convention.casting_style]
+preferred_type_casting_style = consistent
+
+[sqlfluff:rules:convention.not_equal]
+preferred_not_equal_style = c_style
+
+
+
+; SQL Style Layout
+
+[sqlfluff:layout:type:comma]
+line_position = trailing

@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "sql-str-lint"
+version = "0.1.0"
+include = ["sql_str_lint/.sqlfluff"]
+description = "Lint/Fix strings with embedded SQL"
+authors = ["Robert DeRienzo <rlderienzo@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+sqlfluff = "^3.0.7"
+libcst = "^1.4.0"
+importlib_resources = "^6.4.0"
+
+
+[tool.poetry.scripts]
+sql_str_lint_hook = "sql_str_lint.hook:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
