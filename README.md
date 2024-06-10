@@ -1,4 +1,4 @@
-## SQL String Linter
+## Python SQL Embedded String Linter
 
 SQL String Linter is a tool designed to lint SQL strings within Python code using sqlfluff. It provides a way to parse Python files into Abstract Syntax Trees (AST), lint the SQL strings within the AST, and write back the linted code.
 
